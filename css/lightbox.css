@@ -1,0 +1,98 @@
+
+body
+{
+	margin: 2%;
+	padding: 2%;
+	font-family: Arial ,Helvetica ,Sans-serif ,Monospace;
+}
+.sub_body
+{
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+footer
+{
+	 background-image: linear-gradient(to right, #80d4ff , #0077b3);
+	 overflow: auto;
+	 width: 100%;
+	 text-align: center;
+}
+.navbar
+{
+	 background-image: linear-gradient(to right, #80d4ff , #0077b3);
+	 overflow: auto;
+	 width: 100%;
+}
+
+.navbar a
+{
+	padding: 1%;
+	float: right;
+	text-decoration: none;
+	color: #000000;
+}
+
+.navbar a:hover
+{
+	background-color: #adc2eb;
+}
+section
+{
+    
+	color:#0077b3; 
+	font-size: 0.5em;
+	text-align: center;
+	margin-left:20%;
+	margin-right: 20%;
+	margin-top: 10%;
+}
+h1 {
+  font-size: 3em;
+  font-weight: 200;
+  margin: 0.5em 0 0.2em 0;
+}
+
+p {
+  margin: 1.5em 0;
+  color: #888;
+}
+
+.thumbnail {
+  max-width: 40%;
+}
+
+.italic { font-style: italic; }
+.small { font-size: 0.8em; }
+
+/** LIGHTBOX MARKUP **/
+
+.lightbox {
+	/** Default lightbox to hidden */
+	display: none;
+
+	/** Position and style */
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,1);
+}
+
+.lightbox img {
+	/** Pad the lightbox image */
+	width: 100%;
+	height: 100%;
+	margin-top: 2%;
+}
+
+.lightbox:target {
+	/** Remove default browser outline */
+	outline: none;
+
+	/** Unhide lightbox **/
+	display: block;
+}

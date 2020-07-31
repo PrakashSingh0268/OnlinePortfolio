@@ -1,0 +1,460 @@
+body
+{
+	margin: 2%;
+	padding: 2%;
+	font-family: Arial ,Helvetica ,Sans-serif ,Monospace;
+}
+.sub_body
+{
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+footer
+{
+	 background-image: linear-gradient(to right, #80d4ff , #0077b3);
+	 overflow: auto;
+	 width: 100%;
+}
+.color
+{
+    background-image: linear-gradient(to right, #c2d6d6 , #669999);
+	 overflow: auto;
+	 display: inline-block;	
+}
+
+.navbar
+{
+	 background-image: linear-gradient(to right, #80d4ff , #0077b3);
+	 overflow: auto;
+	 width: 100%;
+}
+
+.navbar a
+{
+	padding: 1%;
+	float: right;
+	text-decoration: none;
+	color: #000000;
+}
+
+.navbar a:hover
+{
+	background-color: #adc2eb;
+}
+
+@media all and (max-width: 916px)
+{
+ 		 .contact_left address
+      {
+      	clear: both;
+		display: block;
+		font-size: 0.7em;
+		width: 100%;
+
+		
+      }
+      .contact_right
+      {
+      	clear: both;
+		display: block;
+		font-size: 0.7em;
+		width: 100%;
+		margin-left: 50%;
+		margin-right: 50%
+      }
+      
+	}
+}
+
+
+@media all and (max-width: 500px)
+{
+	.navbar a
+	{     
+		  clear: both;
+		  display: block;
+		  margin-left: auto;
+		  margin-right: auto;
+	}
+	.left
+	{
+		  clear: both;
+		  display: block;
+		  margin-left: auto;
+		  margin-right: auto;
+		  width: 100%;
+	}
+	.left img
+	{
+		  clear: both;
+		  display: block;
+		  margin-left: auto;
+		  margin-right: auto;
+		  width: 50%;
+	}
+	.right
+	{
+		clear: both;
+		display: block;
+	
+	 	width: 100%;
+	    margin-left: 15%;
+	    margin-right: 25%;
+      }
+     .quote
+	{
+		  display: none;
+	}
+	
+    
+      
+  }
+
+
+  }
+  @media all and (max-width: 1000px)
+	{
+		 .contact_left address
+      {
+      	clear: both;
+		display: block;
+		font-size: 0.7em;
+		width: 100%;
+
+		
+      }
+      .contact_right
+      {
+      	clear: both;
+		display: block;
+		font-size: 0.7em;
+		width: 100%;
+		margin-left: 50%;
+		margin-right: 50%
+      }
+      
+	}
+
+	.services
+	{
+		  clear: both;
+		  display: block;
+		  margin-left: auto;
+		  margin-right: auto;
+		  width: 100%;
+		  font-size: 1em;
+	}
+	.quote
+	{
+	 margin: 15%;	
+	 padding: 5%;	
+	}
+	
+}
+section h3
+{
+text-align: center;
+margin-left:45%; 
+margin-right:25%;	
+}
+
+@media all and (min-width: 1660px)
+{
+ .services{
+ 	clear: both;
+ 	display: block;
+ 	width: 100%;
+    margin-left: 45%;
+    margin-right: 25%;
+    font-size: 2em;
+ }
+ section div
+ {
+ 	clear: both;
+ 	display: block;
+ 	align-items: center;
+ 	font-size: 3em;
+ }
+
+.quote
+	{
+	 clear: both;
+	 margin: 10%;	
+	}
+}
+
+.left
+{
+	box-sizing: border-box;
+	border-radius: 5%;
+	float: left;
+	width: 25%;
+	margin: 2%;
+}
+
+.left img
+{
+	border-radius: 50%;
+	width: 50%;
+	float: right;
+}
+
+.right
+{
+	display: inline-block;
+	box-sizing: border-box;
+	border-radius: 5%;
+	float: left;
+	width: 64%;
+	padding: 5%;
+	text-align: center;
+}
+	.right p
+	{
+		text-align: center;
+		color:#193366; 
+	}
+
+.intro
+{
+	display: inline-block;
+	box-sizing: border-box;
+	border-radius: 7%;
+	box-shadow:20px 20px 50px grey;  
+	border-style: outset ;
+	padding: 2%;
+	color:#0077b3; 
+	text-align: justify-all;
+
+}
+.intro h4
+{
+    color: #000000;
+ 	text-decoration: none;
+ 	text-align: center;
+}
+.sevices
+{
+	clear: both;
+    display: block;
+	width: 100%;
+	margin-right: 5%;
+	margin-left: 5%;
+	font-size: 3em;
+	text-align: center;
+}
+.services h3,.left h3 ,article h3
+{
+display: none;
+}
+section div
+{
+
+	display: inline-block;
+	float: left;
+	text-align: center;
+	width: 25%;
+	padding: 1%;
+	margin-left: 5%;
+	margin-right: 3%;
+	margin-bottom: 3%;
+	overflow: auto;
+	font-size: 1em;
+	box-sizing: border-box;
+	background-color:#80dfff;
+	box-shadow:20px 20px 50px grey;  
+	}
+i.fa
+{
+	font-size: 0.9em;
+}
+section div p
+{
+	clear: both;
+	display:block;
+    line-height: 50%;
+	text-align: center;
+	font-size: 1em;
+}
+section div>i
+{
+	clear: both;
+	margin-right:auto;
+	margin-left: auto;
+}
+
+footer div
+{
+	text-align: center;
+	font-size: 1em;
+	line-height: 2em;
+	height: 2em;
+}
+section div:hover
+{
+	transform: rotate(3deg);
+	transition-timing-function: ease 0.2s;
+}
+.quote
+{
+	clear: both;
+	margin: 5%;
+	padding: 5%;
+	box-sizing: border-box;
+	border-radius: 5%;
+	border-style: outset ;
+	padding: 1%;
+	color:#0077b3; 
+	font-size: 0.7em;
+	text-align: center;
+}
+.lightbox
+{
+   clear: both;
+	margin-left:30%;
+	margin-right: 30%;
+	margin-top:2%;
+	margin-bottom: 5%;
+	box-sizing: border-box;
+	border-radius: 5%;
+	border-style: outset ;
+	padding: 1%;
+	color:#0077b3; 
+	font-size: 0.7em;
+	text-align: center;
+}
+.abquote
+{
+	clear: both;
+	margin: 10%;
+	margin-bottom: 5%;
+	padding: 5%;
+	box-sizing: border-box;
+	border-radius: 5%;
+	font-size: 0.7em;
+	border-style: outset ;
+	padding: 1%;
+	color:#0077b3; 
+	text-align: center;
+	background-image: linear-gradient(to right, #e0e0d1 , #999966);
+}
+/*contact
+*/
+section h3
+{
+	display: none;
+}
+.contact_left
+{
+	box-sizing: border-box;
+	text-align: left;
+	display: inline-block;
+	float: left;
+	width: 45%;
+	margin-top: 8%;
+	margin-left: 2%;
+	margin-right: 2%;
+	border:0;
+	font-size: 1.5em;
+	text-overflow: ellipsis; 
+
+}
+.contact_right
+{
+	box-sizing: border-box;
+	margin-left: 2%;
+	margin-right: 2%;
+	float: left;
+	display: inline-block;
+	width: 35%;
+	margin-top: 0%;
+	font-size: 1.5em;
+	text-align: left;
+	text-overflow: ellipsis; 
+}
+.map_data
+{
+	width: 100%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+section address
+{
+    box-sizing: border-box;
+    display: inline-block;
+	border-style: solid 1px;
+	float: left;
+	overflow: auto;  
+	font-size: 1em;
+
+}
+/* Style inputs */
+input[type=text],input[type=email], select, textarea {
+  width: 100%;
+  padding: 2%;
+  border: 1px solid #ccc;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 2%;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div h4
+{
+ text-align: center;
+}
+/*img  grid*/
+
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 2%;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding:2%;
+}
+
+.column img {
+  margin-top: 2%;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
