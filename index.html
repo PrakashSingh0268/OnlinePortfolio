@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Prakash Singh - Portfolio</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script>
+		tailwind.config = {
+			darkMode: 'class',
+			theme: {
+				extend: {
+					animation: {
+						'fade-in': 'fadeIn 0.5s ease-in-out',
+					},
+					keyframes: {
+						fadeIn: {
+							'0%': { opacity: '0', transform: 'translateY(10px)' },
+							'100%': { opacity: '1', transform: 'translateY(0)' },
+						},
+					},
+				},
+			},
+		}
+	</script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+	<!-- Navigation -->
+	<nav class="bg-white dark:bg-gray-800 shadow-lg fixed w-full z-50 transition-colors duration-300">
+		<div class="max-w-7xl mx-auto px-4">
+			<div class="flex justify-between items-center h-16">
+				<div class="flex space-x-8">
+					<a href="index.html" class="text-blue-600 px-3 py-2 rounded-md text-sm font-medium">
+						<i class="fas fa-home mr-2"></i>Home
+					</a>
+					<a href="projects.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out">
+						<i class="fas fa-code mr-2"></i>Projects
+					</a>
+					<a href="about.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out">
+						<i class="fas fa-user mr-2"></i>About
+					</a>
+					<a href="contact.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out">
+						<i class="fas fa-envelope mr-2"></i>Contact
+					</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Main Content -->
+	<main class="pt-20 pb-16">
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+			<!-- Hero Section -->
+			<section class="relative h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 to-purple-600">
+				<div class="absolute inset-0 bg-black opacity-50"></div>
+				<div class="relative z-10 text-center text-white px-4">
+					<h1 class="text-5xl md:text-6xl font-bold mb-4 animate-fade-in">Prakash Singh</h1>
+					<p class="text-2xl md:text-3xl mb-8 animate-fade-in">SDET-2 at SaaS Labs</p>
+					<p class="text-xl mb-8 max-w-2xl mx-auto animate-fade-in">
+						Specializing in Test Automation, API Testing, and Performance Engineering
+					</p>
+					<div class="flex justify-center space-x-4">
+						<a href="https://www.linkedin.com/in/prakash-singh-023034351" 
+						   class="bg-white text-blue-600 px-6 py-3 rounded-lg hover:bg-blue-50 transition duration-300 ease-in-out">
+							<i class="fab fa-linkedin mr-2"></i>LinkedIn
+						</a>
+						<a href="https://github.com/sparky0268" 
+						   class="bg-white text-gray-800 px-6 py-3 rounded-lg hover:bg-gray-50 transition duration-300 ease-in-out">
+							<i class="fab fa-github mr-2"></i>GitHub
+						</a>
+						<a href="https://medium.com/@sparky0268" 
+						   class="bg-white text-gray-800 px-6 py-3 rounded-lg hover:bg-gray-50 transition duration-300 ease-in-out">
+							<i class="fab fa-medium mr-2"></i>Medium
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- About Section -->
+			<section class="py-20 bg-gray-50 dark:bg-gray-900">
+				<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+					<div class="text-center mb-12">
+						<h2 class="text-3xl font-bold text-gray-800 dark:text-white">About Me</h2>
+						<p class="mt-4 text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+							Experienced SDET with expertise in test automation, API testing, and performance engineering. 
+							Currently working at SaaS Labs, focusing on end-to-end test automation using Playwright and TypeScript.
+						</p>
+					</div>
+					<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+						<div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+							<i class="fas fa-code text-4xl text-blue-600 mb-4"></i>
+							<h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">Test Automation</h3>
+							<p class="text-gray-600 dark:text-gray-300">
+								Expert in Playwright, Cypress, and Karate for UI automation, with strong experience in API testing using Rest Assured.
+							</p>
+						</div>
+						<div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+							<i class="fas fa-tachometer-alt text-4xl text-green-600 mb-4"></i>
+							<h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">Performance Testing</h3>
+							<p class="text-gray-600 dark:text-gray-300">
+								Skilled in JMeter and Python for performance testing, with experience in MongoDB and ElasticSearch.
+							</p>
+						</div>
+						<div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+							<i class="fas fa-users text-4xl text-purple-600 mb-4"></i>
+							<h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">Team Leadership</h3>
+							<p class="text-gray-600 dark:text-gray-300">
+								Active mentor to junior team members and contributor to sprint planning and agile methodologies.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Services Section -->
+			<section class="py-12">
+				<h2 class="text-3xl font-bold text-center text-gray-800 dark:text-white mb-8 animate-on-scroll">Services</h2>
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+					<div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+						<i class="fas fa-mobile-alt text-4xl text-blue-600 mb-4"></i>
+						<h3 class="text-xl font-semibold text-gray-800 mb-2">Mobile App Development</h3>
+						<p class="text-gray-600">Creating responsive and user-friendly mobile applications using modern technologies.</p>
+					</div>
+					<div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+						<i class="fas fa-laptop-code text-4xl text-blue-600 mb-4"></i>
+						<h3 class="text-xl font-semibold text-gray-800 mb-2">Web Development</h3>
+						<p class="text-gray-600">Building modern, responsive websites with clean and efficient code.</p>
+					</div>
+					<div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+						<i class="fas fa-pen-fancy text-4xl text-blue-600 mb-4"></i>
+						<h3 class="text-xl font-semibold text-gray-800 mb-2">Content Writing</h3>
+						<p class="text-gray-600">Creating engaging and informative content for various platforms.</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Quote Section -->
+			<section class="py-12">
+				<div class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md animate-on-scroll">
+					<h2 class="text-2xl font-bold text-gray-800 mb-4">Message from the Author</h2>
+					<blockquote class="text-lg text-gray-600 italic border-l-4 border-blue-600 pl-4">
+						"Creativity is just connecting things. When you ask creative people how they did something, they feel a little guilty because they didn't really do it, they just saw something. It seemed obvious to them after a while. That's because they were able to connect experiences they've had and synthesize new things."
+					</blockquote>
+				</div>
+			</section>
+		</div>
+	</main>
+
+	<!-- Footer -->
+	<footer class="bg-gray-800 text-white py-6">
+		<div class="max-w-7xl mx-auto px-4 text-center">
+			<div class="flex justify-center space-x-6 mb-4">
+				<a href="https://www.linkedin.com/in/prakash-singh-023034351?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" 
+				   class="text-white hover:text-blue-400 transition duration-300">
+					<i class="fab fa-linkedin text-2xl"></i>
+				</a>
+				<a href="https://github.com/sparky0268" 
+				   class="text-white hover:text-blue-400 transition duration-300">
+					<i class="fab fa-github text-2xl"></i>
+				</a>
+			</div>
+			<p>Design & developed by Prakash Singh &copy; CET BBSR 2024</p>
+		</div>
+	</footer>
+</body>
+</html>

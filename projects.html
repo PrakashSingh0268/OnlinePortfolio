@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Projects - Prakash Singh</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script>
+		tailwind.config = {
+			darkMode: 'class',
+			theme: {
+				extend: {
+					animation: {
+						'fade-in': 'fadeIn 0.5s ease-in-out',
+					},
+					keyframes: {
+						fadeIn: {
+							'0%': { opacity: '0', transform: 'translateY(10px)' },
+							'100%': { opacity: '1', transform: 'translateY(0)' },
+						},
+					},
+				},
+			},
+		}
+	</script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+	<!-- Navigation -->
+	<nav class="bg-white dark:bg-gray-800 shadow-lg fixed w-full z-50 transition-colors duration-300">
+		<div class="max-w-7xl mx-auto px-4">
+			<div class="flex justify-between items-center h-16">
+				<div class="flex space-x-8">
+					<a href="index.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out">
+						<i class="fas fa-home mr-2"></i>Home
+					</a>
+					<a href="projects.html" class="text-blue-600 px-3 py-2 rounded-md text-sm font-medium">
+						<i class="fas fa-code mr-2"></i>Projects
+					</a>
+					<a href="about.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out">
+						<i class="fas fa-user mr-2"></i>About
+					</a>
+					<a href="contact.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out">
+						<i class="fas fa-envelope mr-2"></i>Contact
+					</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Main Content -->
+	<main class="pt-20 pb-16">
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+			<!-- Project Description -->
+			<section class="py-12">
+				<div class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md animate-on-scroll">
+					<h2 class="text-3xl font-bold text-gray-800 dark:text-white mb-6">My Projects</h2>
+					<p class="text-lg text-gray-600 dark:text-gray-300 mb-8">
+						A collection of my work showcasing expertise in UI Automation, API Testing, and Full Stack Development. Each project demonstrates different aspects of software development and testing methodologies, with a focus on modern technologies and best practices.
+					</p>
+				</div>
+			</section>
+
+			<!-- Projects Grid -->
+			<section class="py-12">
+				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+					<!-- Amazon UI Automation -->
+					<div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+						<div class="flex items-center justify-between mb-4">
+							<i class="fab fa-amazon text-4xl text-orange-600"></i>
+							<a href="https://github.com/sparky0268/AmazonUIAutomationCypress" class="text-blue-600 hover:text-blue-800">
+								<i class="fab fa-github text-2xl"></i>
+							</a>
+						</div>
+						<h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">Amazon UI Automation</h3>
+						<p class="text-gray-600 dark:text-gray-300 mb-4">
+							A comprehensive UI automation framework for Amazon's web interface using Cypress. Features include:
+						</p>
+						<ul class="list-disc list-inside text-gray-600 dark:text-gray-300 mb-4 space-y-2">
+							<li>End-to-end test automation with Cypress</li>
+							<li>Cross-browser testing support (Chrome, Firefox, Edge)</li>
+							<li>Custom commands and utilities for common operations</li>
+							<li>CI/CD integration with GitHub Actions</li>
+							<li>Parallel test execution</li>
+							<li>Custom reporting with Mochawesome</li>
+							<li>Environment-specific configurations</li>
+							<li>Page Object Model implementation</li>
+							<li>Data-driven testing with fixtures</li>
+							<li>Visual regression testing</li>
+							<li>API integration testing</li>
+							<li>Performance monitoring</li>
+						</ul>
+						<div class="flex flex-wrap gap-2 mb-4">
+							<span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">JavaScript</span>
+							<span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Cypress</span>
+							<span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">UI Testing</span>
+							<span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">CI/CD</span>
+							<span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">GitHub Actions</span>
+							<span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Mochawesome</span>
+							<span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">POM</span>
+							<span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Visual Testing</span>
+						</div>
+						<div class="mt-4 space-y-4">
+							<div class="flex justify-between items-center">
+								<a href="https://github.com/sparky0268/AmazonUIAutomationCypress" class="text-blue-600 hover:text-blue-800 flex items-center">
+									<i class="fab fa-github mr-2"></i>View Repository
+								</a>
+								
+							</div>
+						</div>
+					</div>
+
+					<!-- API Testing Framework -->
+					<div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+						<div class="flex items-center justify-between mb-4">
+							<i class="fas fa-code text-4xl text-blue-600"></i>
+							<a href="https://github.com/sparky0268/ApiTestingFramework" class="text-blue-600 hover:text-blue-800">
+								<i class="fab fa-github text-2xl"></i>
+							</a>
+						</div>
+						<h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">API Testing Framework</h3>
+						<p class="text-gray-600 dark:text-gray-300 mb-4">
+							A robust API testing framework built with Java, featuring:
+						</p>
+						<ul class="list-disc list-inside text-gray-600 dark:text-gray-300 mb-4 space-y-2">
+							<li>RESTful API testing with REST Assured</li>
+							<li>Data-driven testing with TestNG</li>
+							<li>Extensive reporting with ExtentReports</li>
+							<li>Environment configuration management</li>
+							<li>Request/Response logging</li>
+							<li>Schema validation</li>
+							<li>Performance testing capabilities</li>
+							<li>OAuth2 authentication support</li>
+							<li>GraphQL API testing</li>
+							<li>WebSocket testing</li>
+							<li>Load testing with JMeter integration</li>
+							<li>Custom assertions and validations</li>
+						</ul>
+						<div class="flex flex-wrap gap-2 mb-4">
+							<span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Java</span>
+							<span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">REST Assured</span>
+							<span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">TestNG</span>
+							<span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Maven</span>
+							<span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">ExtentReports</span>
+							<span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">JSON Schema</span>
+							<span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">JMeter</span>
+							<span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">GraphQL</span>
+						</div>
+						<div class="mt-4 space-y-4">
+								<div class="flex justify-between items-center">
+								<a href="https://github.com/sparky0268/ApiTestingFramework" class="text-blue-600 hover:text-blue-800 flex items-center">
+									<i class="fab fa-github mr-2"></i>View Repository
+								</a>
+								
+							</div>
+						</div>
+					</div>
+
+					<!-- Email Automation -->
+					<div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+						<div class="flex items-center justify-between mb-4">
+							<i class="fas fa-envelope text-4xl text-red-600"></i>
+							<a href="https://github.com/sparky0268/EmailAutomation" class="text-blue-600 hover:text-blue-800">
+								<i class="fab fa-github text-2xl"></i>
+							</a>
+						</div>
+						<h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">Email Automation</h3>
+						<p class="text-gray-600 dark:text-gray-300 mb-4">
+							Automated email processing system with features:
+						</p>
+						<ul class="list-disc list-inside text-gray-600 dark:text-gray-300 mb-4 space-y-2">
+							<li>Email parsing and processing with Node.js</li>
+							<li>Attachment handling and processing</li>
+							<li>Automated responses with templates</li>
+							<li>Email filtering and categorization</li>
+							<li>IMAP/SMTP integration</li>
+							<li>Email analytics and reporting</li>
+							<li>Error handling and retry mechanisms</li>
+							<li>Email scheduling and queuing</li>
+							<li>Spam detection and filtering</li>
+							<li>Email encryption support</li>
+							<li>Custom email templates</li>
+							<li>Email tracking and analytics</li>
+						</ul>
+						<div class="flex flex-wrap gap-2 mb-4">
+							<span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">JavaScript</span>
+							<span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Node.js</span>
+							<span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">IMAP/SMTP</span>
+							<span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Express</span>
+							<span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">MongoDB</span>
+							<span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Redis</span>
+							<span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Handlebars</span>
+						</div>
+						<div class="mt-4 space-y-4">
+							<div class="flex justify-between items-center">
+								<a href="https://github.com/sparky0268/EmailAutomation" class="text-blue-600 hover:text-blue-800 flex items-center">
+									<i class="fab fa-github mr-2"></i>View Repository
+								</a>
+								
+							</div>
+						</div>
+					</div>
+
+					<!-- Reading Mail Using JavaMail API -->
+					<div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+						<div class="flex items-center justify-between mb-4">
+							<i class="fas fa-mail-bulk text-4xl text-green-600"></i>
+							<a href="https://github.com/sparky0268/ReadingMailUsingJavaMailApi" class="text-blue-600 hover:text-blue-800">
+								<i class="fab fa-github text-2xl"></i>
+							</a>
+						</div>
+						<h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">JavaMail API Integration</h3>
+						<p class="text-gray-600 dark:text-gray-300 mb-4">
+							Advanced email processing system using JavaMail API:
+						</p>
+						<ul class="list-disc list-inside text-gray-600 dark:text-gray-300 mb-4 space-y-2">
+							<li>Email reading and parsing with JavaMail API</li>
+							<li>Attachment extraction and processing</li>
+							<li>Email filtering and categorization</li>
+							<li>Automated processing workflows</li>
+							<li>Multi-threaded email processing</li>
+							<li>Error handling and logging</li>
+							<li>Email archiving capabilities</li>
+						</ul>
+						<div class="flex flex-wrap gap-2 mb-4">
+							<span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Java</span>
+							<span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">JavaMail</span>
+							<span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Maven</span>
+							<span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Spring Boot</span>
+							<span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">JUnit</span>
+						</div>
+						<div class="mt-4 space-y-4">
+							
+							<div class="flex justify-between items-center">
+								<a href="https://github.com/sparky0268/ReadingMailUsingJavaMailApi" class="text-blue-600 hover:text-blue-800 flex items-center">
+									<i class="fab fa-github mr-2"></i>View Repository
+								</a>
+								
+							</div>
+						</div>
+					</div>
+
+					<!-- User API -->
+					<div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+						<div class="flex items-center justify-between mb-4">
+							<i class="fas fa-users text-4xl text-purple-600"></i>
+							<a href="https://github.com/sparky0268/user-api" class="text-blue-600 hover:text-blue-800">
+								<i class="fab fa-github text-2xl"></i>
+							</a>
+						</div>
+						<h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">User API</h3>
+						<p class="text-gray-600 dark:text-gray-300 mb-4">
+							RESTful API for user management with features:
+						</p>
+						<ul class="list-disc list-inside text-gray-600 dark:text-gray-300 mb-4 space-y-2">
+							<li>User CRUD operations with validation</li>
+							<li>JWT-based authentication & authorization</li>
+							<li>Data validation with class-validator</li>
+							<li>MongoDB integration with Mongoose</li>
+							<li>Role-based access control</li>
+							<li>API documentation with Swagger</li>
+							<li>Unit and integration testing</li>
+						</ul>
+						<div class="flex flex-wrap gap-2 mb-4">
+							<span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">TypeScript</span>
+							<span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Nest.js</span>
+							<span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">MongoDB</span>
+							<span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">JWT</span>
+							<span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Swagger</span>
+							<span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Jest</span>
+						</div>
+						<div class="mt-4 space-y-4">
+							<div class="flex justify-between items-center">
+								<a href="https://github.com/sparky0268/user-api" class="text-blue-600 hover:text-blue-800 flex items-center">
+									<i class="fab fa-github mr-2"></i>View Repository
+								</a>
+								
+							</div>
+						</div>
+					</div>
+
+					<!-- Online Portfolio -->
+					<div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+						<div class="flex items-center justify-between mb-4">
+							<i class="fas fa-laptop-code text-4xl text-blue-600"></i>
+							<a href="https://github.com/sparky0268/OnlinePortfolio" class="text-blue-600 hover:text-blue-800">
+								<i class="fab fa-github text-2xl"></i>
+							</a>
+						</div>
+						<h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">Online Portfolio</h3>
+						<p class="text-gray-600 dark:text-gray-300 mb-4">
+							Modern portfolio website with features:
+						</p>
+						<ul class="list-disc list-inside text-gray-600 dark:text-gray-300 mb-4 space-y-2">
+							<li>Responsive design with Tailwind CSS</li>
+							<li>Dark mode support with theme switching</li>
+							<li>Interactive animations and transitions</li>
+							<li>Project showcase with detailed information</li>
+							<li>Contact form with validation</li>
+							<li>Image gallery with lightbox</li>
+							<li>Performance optimized with lazy loading</li>
+						</ul>
+						<div class="flex flex-wrap gap-2 mb-4">
+							<span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">HTML</span>
+							<span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">CSS</span>
+							<span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">JavaScript</span>
+							<span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Tailwind</span>
+							<span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Font Awesome</span>
+						</div>
+						<div class="mt-4 space-y-4">
+							<div class="flex justify-between items-center">
+								<a href="https://github.com/sparky0268/OnlinePortfolio" class="text-blue-600 hover:text-blue-800 flex items-center">
+									<i class="fab fa-github mr-2"></i>View Repository
+								</a>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Project Gallery 
+			<section class="py-12">
+				<h2 class="text-3xl font-bold text-center text-gray-800 dark:text-white mb-8 animate-on-scroll">Project Gallery</h2>
+				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+					
+					<div class="space-y-6">
+						<div class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300">
+							<img src="images/h1.png" alt="Home page part 1" class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-300">
+							<div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition duration-300 flex items-center justify-center">
+								<span class="text-white opacity-0 group-hover:opacity-100 transition duration-300">Home Page Part 1</span>
+							</div>
+						</div>
+						<div class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300">
+							<img src="images/h2.png" alt="Home page part 2" class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-300">
+							<div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition duration-300 flex items-center justify-center">
+								<span class="text-white opacity-0 group-hover:opacity-100 transition duration-300">Home Page Part 2</span>
+							</div>
+						</div>
+						<div class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300">
+							<img src="images/Login.png" alt="login page" class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-300">
+							<div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition duration-300 flex items-center justify-center">
+								<span class="text-white opacity-0 group-hover:opacity-100 transition duration-300">Login Page</span>
+							</div>
+						</div>
+					</div>
+
+					
+					<div class="space-y-6">
+						<div class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300">
+							<img src="images/singup_register.png" alt="register page 1" class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-300">
+							<div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition duration-300 flex items-center justify-center">
+								<span class="text-white opacity-0 group-hover:opacity-100 transition duration-300">Register Page</span>
+							</div>
+						</div>
+						<div class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300">
+							<img src="images/Track_parcel.png" alt="Track_parcel page" class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-300">
+							<div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition duration-300 flex items-center justify-center">
+								<span class="text-white opacity-0 group-hover:opacity-100 transition duration-300">Track Parcel</span>
+							</div>
+						</div>
+						<div class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300">
+							<img src="images/COntact-Us.png" alt="contact page" class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-300">
+							<div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition duration-300 flex items-center justify-center">
+								<span class="text-white opacity-0 group-hover:opacity-100 transition duration-300">Contact Us</span>
+							</div>
+						</div>
+					</div>
+
+				
+					<div class="space-y-6">
+						<div class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300">
+							<img src="images/singup_register.png" alt="register page 2" class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-300">
+							<div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition duration-300 flex items-center justify-center">
+								<span class="text-white opacity-0 group-hover:opacity-100 transition duration-300">Register Page 2</span>
+							</div>
+						</div>
+						<div class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300">
+							<img src="images/bbsr1.jfif" alt="bbrsr east" class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-300">
+							<div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition duration-300 flex items-center justify-center">
+								<span class="text-white opacity-0 group-hover:opacity-100 transition duration-300">Bhubaneswar East</span>
+							</div>
+						</div>
+						<div class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300">
+							<img src="images/bbsr3.jfif" alt="bbrsr west" class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-300">
+							<div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition duration-300 flex items-center justify-center">
+								<span class="text-white opacity-0 group-hover:opacity-100 transition duration-300">Bhubaneswar West</span>
+							</div>
+						</div>
+					</div>
+
+			
+					<div class="space-y-6">
+						<div class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300">
+							<img src="images/singup_register.png" alt="register page 3" class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-300">
+							<div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition duration-300 flex items-center justify-center">
+								<span class="text-white opacity-0 group-hover:opacity-100 transition duration-300">Register Page 3</span>
+							</div>
+						</div>
+						<div class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300">
+							<img src="images/bbsr4.jfif" alt="bbrsr south" class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-300">
+							<div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition duration-300 flex items-center justify-center">
+								<span class="text-white opacity-0 group-hover:opacity-100 transition duration-300">Bhubaneswar South</span>
+							</div>
+						</div>
+						<div class="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300">
+							<img src="images/cet1.jfif" alt="cet bbsr" class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-300">
+							<div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition duration-300 flex items-center justify-center">
+								<span class="text-white opacity-0 group-hover:opacity-100 transition duration-300">CET Bhubaneswar</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		-->
+		</div>
+	</main>
+
+	<!-- Footer -->
+	<footer class="bg-gray-800 text-white py-6">
+		<div class="max-w-7xl mx-auto px-4 text-center">
+			<div class="flex justify-center space-x-6 mb-4">
+				<a href="https://www.linkedin.com/in/prakash-singh-023034351?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" 
+				   class="text-white hover:text-blue-400 transition duration-300">
+					<i class="fab fa-linkedin text-2xl"></i>
+				</a>
+				<a href="https://github.com/sparky0268" 
+				   class="text-white hover:text-blue-400 transition duration-300">
+					<i class="fab fa-github text-2xl"></i>
+				</a>
+			</div>
+			<p>Design & developed by Prakash Singh &copy; CET BBSR 2024</p>
+		</div>
+	</footer>
+
+	<script src="js/dynamic.js"></script>
+</body>
+</html>

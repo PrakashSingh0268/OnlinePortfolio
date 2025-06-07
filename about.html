@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>About - Prakash Singh</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script>
+		tailwind.config = {
+			darkMode: 'class',
+			theme: {
+				extend: {
+					animation: {
+						'fade-in': 'fadeIn 0.5s ease-in-out',
+					},
+					keyframes: {
+						fadeIn: {
+							'0%': { opacity: '0', transform: 'translateY(10px)' },
+							'100%': { opacity: '1', transform: 'translateY(0)' },
+						},
+					},
+				},
+			},
+		}
+	</script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+	<!-- Navigation -->
+	<nav class="bg-white dark:bg-gray-800 shadow-lg fixed w-full z-50 transition-colors duration-300">
+		<div class="max-w-7xl mx-auto px-4">
+			<div class="flex justify-between items-center h-16">
+				<div class="flex space-x-8">
+					<a href="index.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out">
+						<i class="fas fa-home mr-2"></i>Home
+					</a>
+					<a href="projects.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out">
+						<i class="fas fa-code mr-2"></i>Projects
+					</a>
+					<a href="about.html" class="text-blue-600 px-3 py-2 rounded-md text-sm font-medium">
+						<i class="fas fa-user mr-2"></i>About
+					</a>
+					<a href="contact.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition duration-150 ease-in-out">
+						<i class="fas fa-envelope mr-2"></i>Contact
+					</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Main Content -->
+	<main class="pt-20 pb-16">
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+			<!-- Professional Summary -->
+			<section class="py-12 bg-white dark:bg-gray-800 rounded-lg shadow-md animate-on-scroll">
+				<div class="max-w-4xl mx-auto px-4">
+					<h2 class="text-3xl font-bold text-center text-gray-800 dark:text-white mb-8">Professional Summary</h2>
+					<div class="space-y-6">
+						<div class="prose dark:prose-invert max-w-none">
+							<p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+								I am currently working as an SDET-2 at SaaS Labs, where I focus on automating end-to-end workflows, improving testing efficiency, and ensuring high-quality product releases. I use Playwright and TypeScript to automate UI and API end-to-end tests, and I actively mentor junior team members while contributing to sprint planning.
+							</p>
+							<p class="text-gray-600 dark:text-gray-300 leading-relaxed mt-4">
+								Before this, I worked at Paytm in the Finance & Payments domain, where I improved regression suite execution time by 3 hours and developed a new UI testing framework using Karate. My previous role as an SDET at Mindfire Solutions in the Healthcare domain involved designing and maintaining automation frameworks with Rest Assured and performing performance testing with Python, MongoDB, and ElasticSearch.
+							</p>
+							<p class="text-gray-600 dark:text-gray-300 leading-relaxed mt-4">
+								Earlier, I contributed to Accenture's Finance & Banking projects, where I enhanced test coverage, performed API testing, and handled data migration.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Professional Links -->
+			<section class="py-8">
+				<div class="max-w-4xl mx-auto px-4">
+					<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+						<a href="https://www.hackerrank.com/profile/000000268sparky" 
+						   class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1 text-center">
+							<i class="fab fa-hackerrank text-4xl text-green-600 mb-4"></i>
+							<h3 class="text-xl font-semibold text-gray-800 dark:text-white">HackerRank</h3>
+							<p class="text-gray-600 dark:text-gray-300 mt-2">View Profile</p>
+						</a>
+						<a href="https://github.com/sparky0268" 
+						   class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1 text-center">
+							<i class="fab fa-github text-4xl text-gray-800 dark:text-white mb-4"></i>
+							<h3 class="text-xl font-semibold text-gray-800 dark:text-white">GitHub</h3>
+							<p class="text-gray-600 dark:text-gray-300 mt-2">View Projects</p>
+						</a>
+						<a href="https://medium.com/@sparky0268" 
+						   class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1 text-center">
+							<i class="fab fa-medium text-4xl text-gray-800 dark:text-white mb-4"></i>
+							<h3 class="text-xl font-semibold text-gray-800 dark:text-white">Medium</h3>
+							<p class="text-gray-600 dark:text-gray-300 mt-2">Read Articles</p>
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- Key Skills -->
+			<section class="py-12 bg-gray-50 dark:bg-gray-900 rounded-lg shadow-md animate-on-scroll">
+				<div class="max-w-4xl mx-auto px-4">
+					<h2 class="text-3xl font-bold text-center text-gray-800 dark:text-white mb-8">Key Skills</h2>
+					<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+						<div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+							<h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-4">Programming Languages</h3>
+							<ul class="space-y-2">
+								<li class="flex items-center text-gray-600 dark:text-gray-300">
+									<i class="fas fa-code text-blue-600 mr-2"></i>
+									Core Java
+								</li>
+								<li class="flex items-center text-gray-600 dark:text-gray-300">
+									<i class="fas fa-code text-blue-600 mr-2"></i>
+									TypeScript
+								</li>
+								<li class="flex items-center text-gray-600 dark:text-gray-300">
+									<i class="fas fa-code text-blue-600 mr-2"></i>
+									Angular
+								</li>
+							</ul>
+						</div>
+						<div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+							<h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-4">Testing Tools</h3>
+							<ul class="space-y-2">
+								<li class="flex items-center text-gray-600 dark:text-gray-300">
+									<i class="fas fa-vial text-purple-600 mr-2"></i>
+									Cypress
+								</li>
+								<li class="flex items-center text-gray-600 dark:text-gray-300">
+									<i class="fas fa-vial text-purple-600 mr-2"></i>
+									Playwright
+								</li>
+								<li class="flex items-center text-gray-600 dark:text-gray-300">
+									<i class="fas fa-vial text-purple-600 mr-2"></i>
+									Karate
+								</li>
+								<li class="flex items-center text-gray-600 dark:text-gray-300">
+									<i class="fas fa-vial text-purple-600 mr-2"></i>
+									Rest Assured
+								</li>
+							</ul>
+						</div>
+						<div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+							<h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-4">Databases & Tools</h3>
+							<ul class="space-y-2">
+								<li class="flex items-center text-gray-600 dark:text-gray-300">
+									<i class="fas fa-database text-green-600 mr-2"></i>
+									MongoDB
+								</li>
+								<li class="flex items-center text-gray-600 dark:text-gray-300">
+									<i class="fas fa-database text-green-600 mr-2"></i>
+									Oracle SQL
+								</li>
+								<li class="flex items-center text-gray-600 dark:text-gray-300">
+									<i class="fas fa-tools text-yellow-600 mr-2"></i>
+									Jira, QTest
+								</li>
+							</ul>
+						</div>
+						<div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+							<h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-4">API & Performance</h3>
+							<ul class="space-y-2">
+								<li class="flex items-center text-gray-600 dark:text-gray-300">
+									<i class="fas fa-plug text-red-600 mr-2"></i>
+									Postman
+								</li>
+								<li class="flex items-center text-gray-600 dark:text-gray-300">
+									<i class="fas fa-tachometer-alt text-red-600 mr-2"></i>
+									JMeter
+								</li>
+								<li class="flex items-center text-gray-600 dark:text-gray-300">
+									<i class="fas fa-code-branch text-red-600 mr-2"></i>
+									Cucumber
+								</li>
+							</ul>
+						</div>
+						<div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+							<h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-4">DevOps & Methodologies</h3>
+							<ul class="space-y-2">
+								<li class="flex items-center text-gray-600 dark:text-gray-300">
+									<i class="fab fa-git-alt text-orange-600 mr-2"></i>
+									Git
+								</li>
+								<li class="flex items-center text-gray-600 dark:text-gray-300">
+									<i class="fab fa-jenkins text-red-600 mr-2"></i>
+									Jenkins
+								</li>
+								<li class="flex items-center text-gray-600 dark:text-gray-300">
+									<i class="fas fa-tasks text-blue-600 mr-2"></i>
+									Agile methodologies
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Skills Section -->
+			<section class="py-12">
+				<h2 class="text-3xl font-bold text-center text-gray-800 dark:text-white mb-8 animate-on-scroll">SKILL SET</h2>
+				
+				<!-- Programming Languages -->
+				<div class="mb-12">
+					<h3 class="text-2xl font-semibold text-gray-800 dark:text-white mb-6 text-center">Programming Languages</h3>
+					<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+						<div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+							<i class="fab fa-python text-4xl text-blue-600 mb-4"></i>
+							<h3 class="text-xl font-semibold text-gray-800 dark:text-white">Python</h3>
+							<p class="text-gray-600 dark:text-gray-300 mt-2">Advanced</p>
+						</div>
+						<div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+							<i class="fab fa-java text-4xl text-orange-600 mb-4"></i>
+							<h3 class="text-xl font-semibold text-gray-800 dark:text-white">Java</h3>
+							<p class="text-gray-600 dark:text-gray-300 mt-2">Advanced</p>
+						</div>
+						<div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+							<i class="fab fa-js text-4xl text-yellow-500 mb-4"></i>
+							<h3 class="text-xl font-semibold text-gray-800 dark:text-white">JavaScript</h3>
+							<p class="text-gray-600 dark:text-gray-300 mt-2">Advanced</p>
+						</div>
+						<div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+							<i class="fas fa-code text-4xl text-blue-500 mb-4"></i>
+							<h3 class="text-xl font-semibold text-gray-800 dark:text-white">TypeScript</h3>
+							<p class="text-gray-600 dark:text-gray-300 mt-2">Intermediate</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Web Technologies -->
+				<div class="mb-12">
+					<h3 class="text-2xl font-semibold text-gray-800 dark:text-white mb-6 text-center">Web Technologies</h3>
+					<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+						<div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+							<i class="fab fa-html5 text-4xl text-orange-500 mb-4"></i>
+							<h3 class="text-xl font-semibold text-gray-800 dark:text-white">HTML5</h3>
+							<p class="text-gray-600 dark:text-gray-300 mt-2">Advanced</p>
+						</div>
+						<div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+							<i class="fab fa-css3-alt text-4xl text-blue-500 mb-4"></i>
+							<h3 class="text-xl font-semibold text-gray-800 dark:text-white">CSS3</h3>
+							<p class="text-gray-600 dark:text-gray-300 mt-2">Advanced</p>
+						</div>
+						<div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+							<i class="fab fa-node-js text-4xl text-green-500 mb-4"></i>
+							<h3 class="text-xl font-semibold text-gray-800 dark:text-white">Node.js</h3>
+							<p class="text-gray-600 dark:text-gray-300 mt-2">Advanced</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Testing & Automation -->
+				<div class="mb-12">
+					<h3 class="text-2xl font-semibold text-gray-800 dark:text-white mb-6 text-center">Testing & Automation</h3>
+					<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+						<div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+							<i class="fas fa-vial text-4xl text-purple-600 mb-4"></i>
+							<h3 class="text-xl font-semibold text-gray-800 dark:text-white">Selenium</h3>
+							<p class="text-gray-600 dark:text-gray-300 mt-2">Advanced</p>
+						</div>
+						<div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+							<i class="fas fa-bug text-4xl text-red-600 mb-4"></i>
+							<h3 class="text-xl font-semibold text-gray-800 dark:text-white">Cypress</h3>
+							<p class="text-gray-600 dark:text-gray-300 mt-2">Advanced</p>
+						</div>
+						<div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+							<i class="fas fa-code-branch text-4xl text-blue-600 mb-4"></i>
+							<h3 class="text-xl font-semibold text-gray-800 dark:text-white">TestNG</h3>
+							<p class="text-gray-600 dark:text-gray-300 mt-2">Advanced</p>
+						</div>
+						<div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+							<i class="fas fa-tachometer-alt text-4xl text-green-600 mb-4"></i>
+							<h3 class="text-xl font-semibold text-gray-800 dark:text-white">JMeter</h3>
+							<p class="text-gray-600 dark:text-gray-300 mt-2">Intermediate</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Databases -->
+				<div class="mb-12">
+					<h3 class="text-2xl font-semibold text-gray-800 dark:text-white mb-6 text-center">Databases</h3>
+					<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+						<div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+							<i class="fas fa-database text-4xl text-blue-500 mb-4"></i>
+							<h3 class="text-xl font-semibold text-gray-800 dark:text-white">SQL</h3>
+							<p class="text-gray-600 dark:text-gray-300 mt-2">Advanced</p>
+						</div>
+						<div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+							<i class="fas fa-leaf text-4xl text-green-600 mb-4"></i>
+							<h3 class="text-xl font-semibold text-gray-800 dark:text-white">MongoDB</h3>
+							<p class="text-gray-600 dark:text-gray-300 mt-2">Advanced</p>
+						</div>
+						<div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+							<i class="fas fa-server text-4xl text-red-600 mb-4"></i>
+							<h3 class="text-xl font-semibold text-gray-800 dark:text-white">Redis</h3>
+							<p class="text-gray-600 dark:text-gray-300 mt-2">Intermediate</p>
+						</div>
+						<div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+							<i class="fas fa-database text-4xl text-purple-600 mb-4"></i>
+							<h3 class="text-xl font-semibold text-gray-800 dark:text-white">PostgreSQL</h3>
+							<p class="text-gray-600 dark:text-gray-300 mt-2">Intermediate</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- DevOps & Tools -->
+				<div class="mb-12">
+					<h3 class="text-2xl font-semibold text-gray-800 dark:text-white mb-6 text-center">DevOps & Tools</h3>
+					<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+						<div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+							<i class="fab fa-git-alt text-4xl text-orange-600 mb-4"></i>
+							<h3 class="text-xl font-semibold text-gray-800 dark:text-white">Git</h3>
+							<p class="text-gray-600 dark:text-gray-300 mt-2">Advanced</p>
+						</div>
+						<div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+							<i class="fab fa-docker text-4xl text-blue-600 mb-4"></i>
+							<h3 class="text-xl font-semibold text-gray-800 dark:text-white">Docker</h3>
+							<p class="text-gray-600 dark:text-gray-300 mt-2">Intermediate</p>
+						</div>
+						<div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+							<i class="fab fa-jenkins text-4xl text-red-600 mb-4"></i>
+							<h3 class="text-xl font-semibold text-gray-800 dark:text-white">Jenkins</h3>
+							<p class="text-gray-600 dark:text-gray-300 mt-2">Intermediate</p>
+						</div>
+						<div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+							<i class="fab fa-linux text-4xl text-gray-800 mb-4"></i>
+							<h3 class="text-xl font-semibold text-gray-800 dark:text-white">Unix/Linux</h3>
+							<p class="text-gray-600 dark:text-gray-300 mt-2">Advanced</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Frameworks & Libraries -->
+				<div class="mb-12">
+					<h3 class="text-2xl font-semibold text-gray-800 dark:text-white mb-6 text-center">Frameworks & Libraries</h3>
+					<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+						<div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+							<i class="fab fa-bootstrap text-4xl text-purple-600 mb-4"></i>
+							<h3 class="text-xl font-semibold text-gray-800 dark:text-white">Bootstrap</h3>
+							<p class="text-gray-600 dark:text-gray-300 mt-2">Advanced</p>
+						</div>
+						<div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+							<i class="fas fa-wind text-4xl text-blue-500 mb-4"></i>
+							<h3 class="text-xl font-semibold text-gray-800 dark:text-white">Tailwind CSS</h3>
+							<p class="text-gray-600 dark:text-gray-300 mt-2">Advanced</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Content Writing Section -->
+			<section class="py-12 bg-white dark:bg-gray-800 rounded-lg shadow-md animate-on-scroll">
+				<div class="max-w-3xl mx-auto px-4">
+					<h2 class="text-3xl font-bold text-center text-gray-800 dark:text-white mb-8">Content Writing</h2>
+					<div class="space-y-6">
+						<div class="border-l-4 border-blue-600 pl-4 py-2">
+							<h3 class="text-xl font-semibold text-gray-800 dark:text-white">Technical Blog Writing</h3>
+							<p class="text-gray-600 dark:text-gray-300">Writing technical articles and tutorials on programming, testing, and software development.</p>
+						</div>
+						<div class="border-l-4 border-blue-600 pl-4 py-2">
+							<h3 class="text-xl font-semibold text-gray-800 dark:text-white">Documentation</h3>
+							<p class="text-gray-600 dark:text-gray-300">Creating comprehensive documentation for software projects and APIs.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Medium Articles Section -->
+			<section class="py-12 bg-gray-50 dark:bg-gray-900 rounded-lg shadow-md animate-on-scroll">
+				<div class="max-w-4xl mx-auto px-4">
+					<h2 class="text-3xl font-bold text-center text-gray-800 dark:text-white mb-8">Medium Articles</h2>
+					<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+						<!-- Article 1 -->
+						<div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+							<div class="flex items-center mb-4">
+								<i class="fab fa-medium text-4xl text-gray-800 dark:text-white mr-4"></i>
+								<h3 class="text-xl font-semibold text-gray-800 dark:text-white">Testing RAG-based AI Agents</h3>
+							</div>
+							<p class="text-gray-600 dark:text-gray-300 mb-4">A comprehensive guide on testing Retrieval-Augmented Generation (RAG) based AI agents, covering best practices and implementation strategies.</p>
+							<a href="https://medium.com/@sparky0268/how-to-test-a-rag-based-ai-agent-eb37a054c469" 
+							   class="inline-flex items-center text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300">
+								Read Article
+								<i class="fas fa-arrow-right ml-2"></i>
+							</a>
+						</div>
+
+						<!-- Article 2 -->
+						<div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+							<div class="flex items-center mb-4">
+								<i class="fab fa-medium text-4xl text-gray-800 dark:text-white mr-4"></i>
+								<h3 class="text-xl font-semibold text-gray-800 dark:text-white">Web Services & APIs Guide</h3>
+							</div>
+							<p class="text-gray-600 dark:text-gray-300 mb-4">A simple guide to understanding web services, APIs, and communication protocols between applications.</p>
+							<a href="https://medium.com/@sparky0268/how-apps-talk-to-each-other-a-simple-guide-to-web-services-apis-and-communication-protocols-42f68d229b25" 
+							   class="inline-flex items-center text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300">
+								Read Article
+								<i class="fas fa-arrow-right ml-2"></i>
+							</a>
+						</div>
+
+						<!-- Article 3 -->
+						<div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+							<div class="flex items-center mb-4">
+								<i class="fab fa-medium text-4xl text-gray-800 dark:text-white mr-4"></i>
+								<h3 class="text-xl font-semibold text-gray-800 dark:text-white">Docker for Beginners</h3>
+							</div>
+							<p class="text-gray-600 dark:text-gray-300 mb-4">A beginner-friendly guide to Docker commands, concepts, and Dockerfile creation for containerization.</p>
+							<a href="https://medium.com/@sparky0268/a-beginners-guide-to-docker-commands-concepts-and-dockerfile-d18b47690acf" 
+							   class="inline-flex items-center text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300">
+								Read Article
+								<i class="fas fa-arrow-right ml-2"></i>
+							</a>
+						</div>
+
+						<!-- Article 4 -->
+						<div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+							<div class="flex items-center mb-4">
+								<i class="fab fa-medium text-4xl text-gray-800 dark:text-white mr-4"></i>
+								<h3 class="text-xl font-semibold text-gray-800 dark:text-white">Playwright Test Retries</h3>
+							</div>
+							<p class="text-gray-600 dark:text-gray-300 mb-4">Understanding test retries and parallelism in Playwright for efficient test automation and execution.</p>
+							<a href="https://medium.com/@sparky0268/understanding-test-retries-and-parallelism-in-playwright-38591e3caaf4" 
+							   class="inline-flex items-center text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300">
+								Read Article
+								<i class="fas fa-arrow-right ml-2"></i>
+							</a>
+						</div>
+					</div>
+
+					<!-- View All Articles Button -->
+					<div class="text-center mt-8">
+						<a href="https://medium.com/@sparky0268" 
+						   class="inline-flex items-center bg-gray-800 dark:bg-gray-700 text-white px-6 py-3 rounded-lg hover:bg-gray-700 dark:hover:bg-gray-600 transition duration-300 ease-in-out">
+							<i class="fab fa-medium mr-2"></i>
+							View All Articles
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- Education Section -->
+			<section class="py-12 bg-white dark:bg-gray-800 rounded-lg shadow-md animate-on-scroll">
+				<div class="max-w-3xl mx-auto px-4">
+					<h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Education</h2>
+					<div class="space-y-6">
+						<div class="border-l-4 border-blue-600 pl-4 py-2">
+							<h3 class="text-xl font-semibold text-gray-800">Post Graduation</h3>
+							<p class="text-gray-600">CET, Bhubaneswar</p>
+							<p class="text-blue-600 font-medium">85%</p>
+						</div>
+						<div class="border-l-4 border-blue-600 pl-4 py-2">
+							<h3 class="text-xl font-semibold text-gray-800">Graduation</h3>
+							<p class="text-gray-600">SU, Sambalpur</p>
+							<p class="text-blue-600 font-medium">79%</p>
+						</div>
+						<div class="border-l-4 border-blue-600 pl-4 py-2">
+							<h3 class="text-xl font-semibold text-gray-800">Intermediate</h3>
+							<p class="text-gray-600">MPS, Sambalpur</p>
+							<p class="text-blue-600 font-medium">69%</p>
+						</div>
+						<div class="border-l-4 border-blue-600 pl-4 py-2">
+							<h3 class="text-xl font-semibold text-gray-800">Matriculation</h3>
+							<p class="text-gray-600">BVKS, Sambalpur</p>
+							<p class="text-blue-600 font-medium">96%</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Lightbox Link 
+			<div class="text-center mt-8 animate-on-scroll">
+				<a href="lightbox.html" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300 ease-in-out">
+					View Lightbox Gallery
+				</a>
+			</div>-->
+		</div>
+	</main>
+
+	<!-- Footer -->
+	<footer class="bg-gray-800 text-white py-6">
+		<div class="max-w-7xl mx-auto px-4 text-center">
+			<div class="flex justify-center space-x-6 mb-4">
+				<a href="https://www.linkedin.com/in/prakash-singh-023034351?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" 
+				   class="text-white hover:text-blue-400 transition duration-300">
+					<i class="fab fa-linkedin text-2xl"></i>
+				</a>
+				<a href="https://github.com/sparky0268" 
+				   class="text-white hover:text-blue-400 transition duration-300">
+					<i class="fab fa-github text-2xl"></i>
+				</a>
+			</div>
+			<p>Design & developed by Prakash Singh &copy; CET BBSR 2024</p>
+		</div>
+	</footer>
+
+	<script src="js/dynamic.js"></script>
+</body>
+</html>
