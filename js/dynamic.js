@@ -197,32 +197,111 @@ window.addEventListener('scroll', () => {
     lastScroll = currentScroll;
 });
 
-// Form validation and submission
-const contactForm = document.querySelector('form');
-if (contactForm) {
-    contactForm.addEventListener('submit', async (e) => {
-        e.preventDefault();
-        
-        const formData = new FormData(contactForm);
-        const data = Object.fromEntries(formData);
-        
-        // Basic form validation
-        let isValid = true;
-        const email = data.email;
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        
-        if (!emailRegex.test(email)) {
-            isValid = false;
-            alert('Please enter a valid email address');
+// EmailJS form submission
+function sendEmail(e) {
+    e.preventDefault();
+    
+    const form = document.getElementById('contact-form');
+    const submitBtn = document.getElementById('submit-btn');
+    const buttonText = document.getElementById('button-text');
+    const loadingSpinner = document.getElementById('loading-spinner');
+    const formStatus = document.getElementById('form-status');
+    const statusMessage = document.getElementById('status-message');
+    
+    // Show loading state
+    submitBtn.disabled = true;
+    buttonText.textContent = 'Sending...';
+    loadingSpinner.classList.remove('hidden');
+    
+    // Get form data
+    const formData = new FormData(form);
+    const data = {
+        firstname: formData.get('firstname'),
+        lastname: formData.get('lastname'),
+        email: formData.get('email'),
+        phone: formData.get('phone'),
+        country: formData.get('country'),
+        subject: formData.get('subject'),
+        message: formData.get('message'),
+        newsletter: formData.get('newsletter') ? 'Yes' : 'No'
+    };
+    
+    // Send email using EmailJS
+    emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', data)
+        .then(function(response) {
+            // Show success message
+            formStatus.classList.remove('hidden');
+            formStatus.classList.add('bg-green-100', 'dark:bg-green-900');
+            statusMessage.textContent = 'Thank you for your message! I will get back to you soon.';
+            statusMessage.classList.add('text-green-800', 'dark:text-green-200');
+            
+            // Reset form
+            form.reset();
+        })
+        .catch(function(error) {
+            // Show error message
+            formStatus.classList.remove('hidden');
+            formStatus.classList.add('bg-red-100', 'dark:bg-red-900');
+            statusMessage.textContent = 'Sorry, there was an error sending your message. Please try again later.';
+            statusMessage.classList.add('text-red-800', 'dark:text-red-200');
+        })
+        .finally(function() {
+            // Reset button state
+            submitBtn.disabled = false;
+            buttonText.textContent = 'Send Message';
+            loadingSpinner.classList.add('hidden');
+            
+            // Hide status message after 5 seconds
+            setTimeout(() => {
+                formStatus.classList.add('hidden');
+                formStatus.classList.remove('bg-green-100', 'bg-red-100', 'dark:bg-green-900', 'dark:bg-red-900');
+                statusMessage.classList.remove('text-green-800', 'text-red-800', 'dark:text-green-200', 'dark:text-red-200');
+            }, 5000);
+        });
+    
+    return false;
+}
+
+// Form validation
+function validateForm() {
+    const form = document.getElementById('contact-form');
+    const email = form.querySelector('#email').value;
+    const phone = form.querySelector('#phone').value;
+    
+    // Email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+        showError('Please enter a valid email address');
+        return false;
+    }
+    
+    // Phone validation (optional)
+    if (phone) {
+        const phoneRegex = /^\+?[\d\s-]{10,}$/;
+        if (!phoneRegex.test(phone)) {
+            showError('Please enter a valid phone number');
+            return false;
         }
-        
-        if (isValid) {
-            // Here you would typically send the form data to a server
-            // For now, we'll just show a success message
-            alert('Thank you for your message! I will get back to you soon.');
-            contactForm.reset();
-        }
-    });
+    }
+    
+    return true;
+}
+
+function showError(message) {
+    const formStatus = document.getElementById('form-status');
+    const statusMessage = document.getElementById('status-message');
+    
+    formStatus.classList.remove('hidden');
+    formStatus.classList.add('bg-red-100', 'dark:bg-red-900');
+    statusMessage.textContent = message;
+    statusMessage.classList.add('text-red-800', 'dark:text-red-200');
+    
+    // Hide error message after 5 seconds
+    setTimeout(() => {
+        formStatus.classList.add('hidden');
+        formStatus.classList.remove('bg-red-100', 'dark:bg-red-900');
+        statusMessage.classList.remove('text-red-800', 'dark:text-red-200');
+    }, 5000);
 }
 
 // Image lazy loading
